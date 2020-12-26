@@ -1,0 +1,204 @@
+html {
+	box-sizing: border-box;
+	overflow-x: hidden;
+	background-color: #C1CF7A;
+}
+
+
+.margin_50 {
+	margin: 50px;
+}
+
+.command__row {
+	height: 58px;
+	width: 100%;
+	background-color: #A46578;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pop-up__command {
+	padding: 0 80px;
+	justify-content: flex-end;
+}
+
+.page-description {
+	font-family: 'Merriweather';
+	font-size: 50px;
+	margin: 90px 50px 40px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* (background) */
+.pop-up {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(130, 59, 111, 0.6);
+}
+
+/* Modal Content/Box */
+.delete-pop-up {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+
+.pop-up__content {
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pop-up__title {
+	font-family: 'Merriweather';
+	font-size: 40px;
+}
+
+p {
+	font-size: 24px;
+	font-weight: 600px;
+	margin-bottom: 30px;
+}
+
+.red {
+	color: rgb(216, 0, 7);
+	font-weight: bold;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+
+.box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px 15px 0px;
+	background-color: #C1CF7A;
+	max-height: 600px;
+	overflow-y: auto;
+	border: 2px solid black;
+	width: auto;
+}
+.user__row {
+	display: flex;
+	align-items: center;
+	margin-right: 25px;
+	padding: 5px;
+	border: 2px solid rgba(0,0,0,0.5);
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+.profile-picture {
+	width: 50px;
+	height: 50px;
+	border: 2px solid black;
+	border-radius: 5px;
+	align-self: center;
+	margin-right: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.none {
+	background-color: rgba(169, 222, 249, 0.7) ;
+}
+.no-picture {
+	margin: 3px;
+	width: 40px;
+	height: 40px;
+}
+.profile-picture>img {
+	object-fit: contain;
+	max-width: 50px;
+	max-height: 50px;
+}
+.user-text-details__row {
+	display: flex;
+	height: 50px;
+	background-color: rgba( 255, 255, 255, 0.96);
+	border-radius: 5px;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 440px;
+	border: 1.5px solid black;
+	padding: 10px 5px;
+}
+
+.styled-as-input {
+	font-size: 18px;
+	padding: 10px 5px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	min-width: max-content;
+	padding: 4px 8px 2px;
+	text-align: left;
+}
+.signature {
+	font-family: 'Merriweather';
+}
+.login {
+	font-family: 'Teen';
+}
+
+.number-of-blocks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border: 2px solid black;
+	border-radius: 5px;
+	align-self: center;
+	margin-left: 25px;
+	font-size: 24px;
+	font-style: bold;
+}
+.finished {
+	background-color: rgba(0, 255, 0, 0.4);
+}
+.unfinished {
+	background-color: rgba(255, 182, 72, 0.25);
+}
+
+
+
+.margin-bottom {
+	margin-bottom: 20px;
+}

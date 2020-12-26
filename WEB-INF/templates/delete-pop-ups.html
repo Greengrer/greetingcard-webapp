@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css"/>
+    <link rel="stylesheet" href="../../assets/css/delete-pop-up.css" />
+    <title>Delete Pop-Ups</title>
+</head>
+<body>
+
+		<p class="page-description">Delete pop-ups</p>
+
+		<button onclick="document.getElementById('delete-card').style.display='block'" class="command-button yellow-button margin_50">Delete card</button>
+
+		<button onclick="document.getElementById('leave-card').style.display='block'" class="command-button yellow-button margin_50">Leave card</button>
+
+		<button onclick="document.getElementById('delete-chosen-users').style.display='block'" class="command-button yellow-button margin_50">Delete chosen(users)</button>
+
+		<div id="delete-card" class="pop-up">
+		  <span onclick="document.getElementById('delete-card').style.display='none'" class="close" title="Close pop-up
+	">×</span>
+		  <form class="delete-pop-up" action="">
+		    <div class="pop-up__content">
+		      <p class="pop-up__title">Delete Card</p>
+<!-- 		      <p class="red">3 blocks are getting deleted.</p> -->
+<!-- 		      <p>Team of 2 people is working on the card.("You are working" if there's only creator.)</p> -->
+<!--		      <p>1 of them is(are) finished.(Paragraph doesn't appear if there's only creator. "No one has finished work yet, if 0 collaborators are finished.")</p> -->
+		      <p>Are you sure you want to delete this card?</p>
+		    
+		      <div class="command__row pop-up__command">
+		        <button type="button" onclick="document.getElementById('delete-card').style.display='none'" class="command-button yellow-button cancel">Cancel</button>
+		        <button type="button" onclick="document.getElementById('delete-card').style.display='none'" class="command-button white-button delete">Delete</button>
+		      </div>
+		    </div>
+		  </form>
+		</div>
+
+		<div id="leave-card" class="pop-up">
+		  <span onclick="document.getElementById('leave-card').style.display='none'" class="close" title="Close pop-up
+	">×</span>
+		  <form class="delete-pop-up" action="">
+		    <div class="pop-up__content">
+		      <p class="pop-up__title">Leave Card</p>
+		      <p class="red">Your blocks will be deleted</p>
+<!-- 		      <p>You have 3 blocks in "Card_example" alongside others.</p> -->
+		      <p>Are you sure you want to leave this card?</p>
+
+		      <div class="command__row pop-up__command">
+		        <button type="button" onclick="document.getElementById('leave-card').style.display='none'" class="command-button yellow-button cancel">Cancel</button>
+		        <button type="button" onclick="document.getElementById('leave-card').style.display='none'" class="command-button white-button leave">Leave</button>
+		      </div>
+		    </div>
+		  </form>
+		</div>
+
+		<div id="delete-chosen-users" class="pop-up">
+		  <span onclick="document.getElementById('delete-chosen-users').style.display='none'" class="close" title="Close pop-up
+	">×</span>
+		  <form class="delete-pop-up" action="">
+		    <div class="pop-up__content">
+		      <p class = "pop-up__title">Resign users</p>
+		      <p class="red">When you resign user their blocks are deleted.</p>
+		      <p> Please, check users you wan't to resign:</p>
+		      <div class="box">
+		      	<div class="user__row margin-bottom">
+                    <div class="profile-picture">
+                        <img src="../../assets/pictures/pinkcake.jpg">
+                    </div>
+                    <div class="user-text-details__row">
+                        <div class="styled-as-input signature">Signature</div>
+                        <div class="styled-as-input login">Login</div>
+                    </div>
+                    <div class="number-of-blocks unfinished">3</div>
+                </div>
+                <div class="user__row margin-bottom">
+                    <div class="profile-picture">
+                        <img src="../../assets/pictures/tealcake.jpg">
+                    </div>
+                    <div class="user-text-details__row">
+                        <div class="styled-as-input signature">Signature</div>
+                        <div class="styled-as-input login">Login</div>
+                    </div>
+                    <div class="number-of-blocks unfinished">3</div>
+                </div>
+                <div class="user__row margin-bottom">
+                    <div class="profile-picture">
+                        <img src="../../assets/pictures/browncake.jpg">
+                    </div>
+                    <div class="user-text-details__row">
+                        <div class="styled-as-input signature">Signature</div>
+                        <div class="styled-as-input login">Login</div>
+                    </div>
+                    <div class="number-of-blocks unfinished">3</div>
+                </div>
+		      </div>
+		    
+		      <div class="command__row pop-up__command">
+		        <button type="button" onclick="document.getElementById('delete-chosen-users').style.display='none'" class="command-button yellow-button cancel">Cancel</button>
+		        <button type="button" onclick="document.getElementById('delete-chosen-users').style.display='none'" class="command-button white-button resign">Resign</button>
+		      </div>
+		    </div>
+		  </form>
+		</div>
+
+		<script>
+		// Get the pop-up
+		var delete-card = document.getElementById('delete-card');
+		var leave-card = document.getElementById('leave-card');
+		var delete-chosen-users = document.getElementById('delete-chosen-users');
+
+
+		// When the user clicks anywhere outside of the pop-up, close it
+		//THE PART THAT DOESN'T WORK.
+		window.onclick = function(event) {
+		  if (event.target == delete-card) {
+		    delete-card.style.display = "none";
+		  }
+		}
+		window.onclick = function(event) {
+		  if (event.target == leave-card) {
+		    leave-card.style.display = "none";
+		  }
+		}
+		window.onclick = function(event) {
+		  if (event.target == delete-chosen-users) {
+		    delete-chosen-users.style.display = "none";
+		  }
+		}
+		</script>
+
+</body>
+</html>

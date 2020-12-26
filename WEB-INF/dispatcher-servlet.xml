@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress ALL -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.greetingcard.web.controller"/>
+    <context:property-placeholder location="classpath:application.properties" order="1" ignore-unresolvable="true"/>
+
+    <mvc:resources mapping="/audio/**" location="file:${dir.files}/audio/"/>
+    <mvc:resources mapping="/img/**" location="file:${dir.files}/img/"/>
+    <mvc:resources mapping="/profile/**" location="file:${dir.files}/profile/"/>
+
+    <mvc:annotation-driven />
+</beans>

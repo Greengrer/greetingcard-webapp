@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Edit Block</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../../assets/css/reset.css" />
+		<link rel="stylesheet" href="../../assets/css/common.css" />
+		<link rel="stylesheet" href="../../assets/css/block-editor-simplified.css" />
+		<meta charset="UTF-8">
+	</head>
+	<body>	
+	<div class="wrapper">
+		<div class="main-functions">
+			<div class="command__row">
+				<div class="block__filter">
+				</div>
+				<div class="actions__row">
+					<input type="submit" for="elements-adder__column text editor" class="save-block yellow-button command-button" value="Save Block">
+					<a href="#" class="delete-block white-button command-button">Delete Block</a>
+				</div>
+			</div>
+			<main class="container no-bottom-padding">
+				<div class="text-editor"></div>
+				<form action="#" id="elements-adder__row">
+
+					<label for="image-files" class="file-adder adder without-left-margin">
+						
+						<img src="../../assets/pictures/picture.png" class="element-type-icon">
+						<img src="../../assets/pictures/add.png" class="element-adder-icon">
+						
+						<input type="file" id="image-files" name="image-files" accept="image/*" class="files-input" multiple>
+					</label>
+
+					<label for="audio-files" class="file-adder adder">
+						
+						<img src="../../assets/pictures/audio.png" class="element-type-icon">
+						<img src="../../assets/pictures/add.png" class="element-adder-icon">
+						
+						<input type="file" id="audio-files" name="audio-files" accept="audio/*" class="files-input" multiple>
+					</label>
+
+					<label for="links" class="link-adder adder">
+						<img src="../../assets/pictures/link.png" class="element-type-icon">
+						<input type="text" id="links" name="links" class="links" placeholder="Links">
+					</label>
+					<label for="youtube-links" class="link-adder adder">
+						<img src="../../assets/pictures/youtube-link.png" class="element-type-icon">
+						<input type="text" id="youtube-links" name="youtube-links" class="links" placeholder="Youtube links">
+					</label>
+
+				</form>
+				<form action="#" id="optional-elements__box">
+					<div class="command__row">
+						<div class="block-elements__filter">
+						</div>
+						<div class="actions__row">
+							<input type="submit" for="elements-adder__column text editor" class="save-block yellow-button command-button" value="Delete Selected">
+						</div>
+					</div>
+					<div class="container">
+						<div class="element-with-checkbox">
+							<label for="delete-element-1">
+								<div class="optional-element">tealcake.jpg</div>
+							</label>
+							<input type="checkbox" id="delete-element-1">
+						</div>
+						<div class="element-with-checkbox">
+							<label for="delete-element-2">
+								<div class="optional-element">Fright of Their Lives.mp3</div>
+							</label>
+							<input type="checkbox" id="delete-element-2">
+						</div>
+					</div>
+				</form>
+			</main>
+		</div>
+	</div>
+	</body>
+	</html>

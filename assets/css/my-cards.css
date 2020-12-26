@@ -1,0 +1,131 @@
+.header-right__row {
+	display: flex;
+	position: relative;
+	width: 529px;
+}
+
+.navigation-row {
+	display: flex;
+	justify-content: space-between;
+	width: 301px;
+	margin-right: 96px;
+
+}
+
+.filter__cards {
+	display:flex;
+	justify-content: center;
+	margin-left: 170px;
+	border-radius: 5px;
+}
+
+#create-card {
+	display: flex;
+	justify-content: center;
+	margin-right: 100px;
+}
+
+#create-card input[type="text"]{
+	border: none;
+	height: 47px;
+	padding: 7px;
+	vertical-align: middle;
+}
+#create-card input[type="submit"]{
+	border: none;
+	text-align: center;
+	vertical-align: middle;
+	height: 100%;
+}
+
+
+.no-padding {
+	padding: 0;
+}
+
+.list-of-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	min-width: 100vw;
+	max-width: 100vh;
+	flex: 0 1 auto;
+	padding: 65px 400px 100px;
+}
+
+.card-and-actions-block {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px auto 0px;
+	padding: 15px;
+	border: 1px solid black;
+	height: 130px;
+	background-color: rgba(235, 246, 220, 0.8);
+	box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card__row {
+	display: flex;
+	justify-content: space-between;
+}
+.card-link {
+	width: 100px;
+	height: auto;
+	background-color: white;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card-link img {
+	width: auto;
+	height: 90%;
+}
+
+.preview {}
+.card-details__column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0px 30px;
+}
+.card-name {
+	font-size: 18px;
+}
+.styled-as-input {
+	width: 200px;
+	height: 30px;
+	margin-bottom: 18px;
+	overflow: hidden;
+	text-overflow: '..';
+	white-space: nowrap;
+	padding: 5px 15px 5px;
+	background: none;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+}
+.card-author {
+	font-size: 16px;
+}
+
+.actions__column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.card-action img{
+	width: 40px;
+	height: auto;
+}
+.edit {
+	border: 1px solid black;
+}
+.delete {}
+.disabled {
+	pointer-events: none;
+	opacity: 0.6;
+}
+.leave {}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Contribute to card</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../../assets/css/reset.css" />
+		<link rel="stylesheet" href="../../assets/css/common.css" />
+		<link rel="stylesheet" href="../../assets/css/card-editor-creator.css" />
+		<meta charset="UTF-8">
+	</head>
+	<body>	
+	<div class="wrapper">
+		<header class="header">
+			<div class="app-name">GreetTeam</div>
+			<div class=header-right__row>
+				<div class="navigation-row">
+					<a href="#" class="navigation-link home">
+						<img src="../../assets/pictures/home.png">
+					</a>
+					<a href="#" class="navigation-link profile">
+						<img src="../../assets/pictures/user.png">
+					</a>
+					<a href="#" class="navigation-link my-cards">
+						<img src="../../assets/pictures/photos.png">
+					</a>
+					<a href="#" class="navigation-link log-out">
+						<img src="../../assets/pictures/exit.png">
+					</a>
+				</div>
+				<div class="user-greeting">Hello, Author1!</div>
+			<div>
+		</header>
+		<div class="main-functions">
+			<div class="command__row">
+				<div class="filter__blocks">
+					<a href="#" class="filter-button chosen">All Blocks</a>
+					<a href="#" class="filter-button">My Blocks</a>
+				</div>
+				<div class="actions__row">
+					<a href="#" class="add-block yellow-button command-button">+ Add block</a>
+					<a href="#" class="list-of-collaborators yellow-button command-button">List of collaborators</a>
+					<a href="#" class="signal-finish white-button command-button">Finish Card</a>
+					<a href="#" class="leave-card yellow-button command-button">Delete Card</a>
+				</div>
+			</div>
+			<main class="container">
+				<div class="collapsible-wrapper">
+					<input id="collapsible_bg-and-dec" class="toggle" type="checkbox">
+					<label for="collapsible_bg-and-dec" class="toggle__label">
+						<img src="../../assets/pictures/mark.png">
+					</label>
+					<div class="collapsible__content">
+						<div class="content_inner">
+							<div class="bg-and-decorations-options__column">
+								<div class="card-change__column">
+									<p>Card</p>
+									<div class="bg-change-options__column card-change">
+										
+										<label for="image-files" class="file-adder adder" name="images">
+											
+											<img src="../../assets/pictures/picture.png" class="element-type-icon">
+											<img src="../../assets/pictures/add.png" class="element-adder-icon">
+											
+											<input type="file" id="image-files" name="image-files" accept="image/*" class="files-input" multiple>
+										</label>
+											<button id="reset_card" class="dropdown-link">
+												<img src="../../assets/pictures/reset.png">
+												Reset
+											</button>
+									</div>
+								</div>
+								<div class="block-change__column">
+									<p>Blocks</p>
+									<div class="bg-change-options__column block-change">
+										<div class="choose__row">
+											<button id="block-4f4fb5" class="change-button bg-button"></button>
+											<button id="block-B40EB9" class="change-button bg-button"></button>
+											<button id="block-white" class="change-button bg-button"></button>
+										</div>
+									</div>
+								</div>
+								<button id="save-changes" class="dropdown-link">Save</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<form id="rename-card" action="">
+					<input type="text" class="card__title" placeholder="Happy ...">
+					<input type="submit" name="Save name" class="save-name" value="Save name">
+				</form>
+				
+				<div class="congratulation-block">
+					<div class="signature">Author1</div>
+					<div class="congratulation-body">
+						<div class="block-actions__container">
+							<div class="block-actions__dropdown">
+								<img src="../../assets/pictures/mark.png">
+								<div class="block-actions">
+									<a href="#" class="dropdown-link">Edit block</a>
+									<a href="#" class="dropdown-link">Delete block</a>
+								</div>
+							</div>
+						</div>
+						<div class="text-element">Happy Birthday</div>
+						<div class="optional-element">
+							<img src="../../assets/pictures/photo-1553135422-400ee5852b27.png" class="optional-element_image">
+						</div>
+					</div>
+				</div>
+				<div class="congratulation-block">
+					<div class="signature">Author1</div>
+					<div class="congratulation-body">
+						<div class="block-actions__container">
+							<div class="block-actions__dropdown">
+								<img src="../../assets/pictures/mark.png">
+								<div class="block-actions">
+									<a href="#" class="dropdown-link">Edit block</a>
+									<a href="#" class="dropdown-link">Delete block</a>
+								</div>
+							</div>
+						</div>
+						<div class="text-element">Happy Birthday</div>
+						<div class="optional-element">
+							<img src="../../assets/pictures/photo-1553135422-400ee5852b27.png" class="optional-element_image">
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	</body>
+	</html>
